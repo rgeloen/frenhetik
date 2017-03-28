@@ -245,18 +245,12 @@ body{
 	transition-duration: 1s;
 }
 #game a:hover{
-	display: inline-block;
-	text-align: center;
-	margin-top: 110px;
-	padding: 5px 40px 5px 40px;
-	border: 4px solid black;
 	background-color:  #75CA00;
 	color: black;
-	font-family: 'roadRage';
-	font-size: 20px;
-	text-transform: uppercase;
-	text-decoration: none;
 	transition-duration: 1s;
+}
+#game #buttonPlay{
+	text-align: center;
 }
 /****************************************
 
