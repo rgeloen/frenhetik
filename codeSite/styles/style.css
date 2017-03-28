@@ -263,21 +263,28 @@ body{
 	height: 200px;
 	background-color: #585858;
 	text-align: center;
+	position: relative;
 }
 
 #footer #miscFooter{
 	display: inline-block;
 	width: 200px;
-	font-family: 'Play', sans-serif;
-	font-weight: regular;
-	font-size: 20px;
 	text-transform: uppercase;
-	color: #FFC300;
 	text-align: center;
 	line-height: 40px;
 	vertical-align: middle;
 	margin-top: 30px;
-
+}
+#miscFooter a{
+		color: #FFC300;
+		font-family: 'Play', sans-serif;
+		font-weight: regular;
+		font-size: 20px;
+		transition-duration: 0.5s;
+}
+#miscFooter a:hover{
+		color: white;
+		transition-duration: 0.5s;
 }
 #footer #navFooter{
 	display: inline-block;
@@ -313,16 +320,20 @@ a{
 	text-decoration: none;
 	color: white;
 }
+a:hover{
+	color: #FFC300;
+}
 #footer div{
 	margin-left: 100px;
 	margin-right: 100px;
 }
 #copy{
+	position: absolute;
+	display: inline-block;
+	bottom: 20px;
+	right: 20px;
 	font-family: "Play", sans-serif;
 	text-transform: uppercase;
 	color: #FFC300;
-	float: right;
-	font-size: 16px;
-	margin-top: 150px;
-	margin-right: 20px;
+	font-size: 13px;
 }
