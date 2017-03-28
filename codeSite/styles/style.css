@@ -252,6 +252,8 @@ body{
 #game #buttonPlay{
 	text-align: center;
 }
+
+
 /****************************************
 
 								FOOTER
@@ -260,11 +262,9 @@ body{
 #footer{
 	height: 200px;
 	background-color: #585858;
-	padding-top: 60px;
+	text-align: center;
 }
-#footer span{
-	display: inline-block;
-}
+
 #footer #miscFooter{
 	display: inline-block;
 	width: 200px;
@@ -273,17 +273,21 @@ body{
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #FFC300;
-	margin-left: 60px;
 	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-top: 30px;
+
 }
 #footer #navFooter{
 	display: inline-block;
-	width: 100px;
+	width: 120px;
 	color: white;
 	font-family: 'Jura', sans-serif;
 	font-weight: lighter;
 	font-size: 23px;
-	margin-left: 30px;
+	vertical-align: top;
+	margin-top: 30px;
 }
 #footer #networkFooter{
 	display: inline-block;
@@ -292,15 +296,33 @@ body{
 	font-family: 'Jura', sans-serif;
 	font-weight: lighter;
 	font-size: 23px;
-	margin-left: 40px;
+	vertical-align: top;
+	margin-top: 30px;
+
 }
 #footer .titleFooter{
+	display: inline-block;
 	font-family: 'Play', sans-serif;
 	font-weight: regular;
 	font-size: 20px;
 	text-transform: uppercase;
 	color: white;
-}
-#footer .span1, .span2{
 	margin-bottom: 10px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+#footer div{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#copy{
+	font-family: "Play", sans-serif;
+	text-transform: uppercase;
+	color: #FFC300;
+	float: right;
+	font-size: 16px;
+	margin-top: 150px;
+	margin-right: 20px;
 }
