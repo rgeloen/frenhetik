@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeu</title>
+    <link rel="stylesheet" href="../styles/style_game.css"/>
+  </head>
+  <body>
+    <div class="playground">
+      <div class="Score  perfect">Perfect : 0</div>
+      <div class="Score bien">Bien : 0</div>
+      <div class="Score pasMal">Pas Mal : 0</div>
+      <div class="Score manqué">Manqué : 0</div>
+      <div class="game">
+        <div id="background">
+          <div id="touche1" class="touche"></div>
+          <div id="touche2" class="touche"></div>
+          <div id="touche3" class="touche"></div>
+          <div id="touche4" class="touche"></div>
+          <div id="zoneDeValidation"></div>
+        </div>
+      </div>
+      <div class="option"></div>
+
+  		<div id="menu">
+  				<div class="button">
+  						<a href="#" class="menu1" id="button1">Play</a>
+  				</div>
+  				<div class="button menu2">
+  					<a href="#" class="menu2" id="button2">Options</a>
+  				</div>
+  				<div class="button menu3">
+  					 <a href="#" class="menu3" id="button3">Quit</a>
+  				</div>
+          <a class="back" href="#">Back</a>
+  		</div>
+
+      <progress max="100" value="25" form="form-id">25%</progress>
+    </div>
+
+    <audio></audio>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../scripts/main_game.js"></script>
+
+  </body>
+
+</html>
