@@ -12,6 +12,8 @@ $(document).ready(function() {
   var menu = $("#menu");
   var retour = $(".back");
 
+retour.css("display","none");
+
   button1.click(function(){
     if (button1.hasClass("menu1")) {
         button1.fadeOut("300", function(){
@@ -21,6 +23,7 @@ $(document).ready(function() {
           button1.addClass("play1");
           button2.addClass("play2");
           button3.addClass("play3");
+          retour.css("display","inline-block");
           button1.text("easy").fadeIn("slow",function(){});
         });
         button2.fadeOut("300", function(){
@@ -30,7 +33,18 @@ $(document).ready(function() {
           button3.text("hard").fadeIn("slow",function(){});
         });
       } else if(button1.hasClass("play1")) {
-          menu.fadeOut("900", function(){})
+        button1.click(function() {
+          menu.fadeOut("900", function(){});
+          init();
+        });
+        button2.click(function() {
+          menu.fadeOut("900", function(){});
+          init();
+        });
+        button3.click(function() {
+          menu.fadeOut("900", function(){});
+          init();
+	      });
       };
     });
 
@@ -43,6 +57,7 @@ $(document).ready(function() {
         button1.addClass("option1");
         button2.addClass("option2");
         button3.addClass("option3");
+        retour.css("display","block");
         button1.text("Configurer touches").fadeIn("slow",function(){});
       });
       button2.fadeOut("300", function(){
@@ -71,6 +86,7 @@ $(document).ready(function() {
         button1.addClass("menu1");
         button2.addClass("menu2");
         button3.addClass("menu3");
+        retour.css("display","none");
         button1.text("play").fadeIn("slow",function(){});
       });
       button2.fadeOut("300", function(){
@@ -87,6 +103,7 @@ $(document).ready(function() {
         button1.addClass("menu1");
         button2.addClass("menu2");
         button3.addClass("menu3");
+        retour.css("display","none");
         button1.text("play").fadeIn("slow",function(){});
       });
       button2.fadeOut("300", function(){
@@ -100,7 +117,7 @@ $(document).ready(function() {
 
   /***********************************************
 
-                          GAME SCRIPT
+                          GAME SCRIPT        $('.musicEasy')[0].play();
 
   ***********************************************/
 
@@ -116,7 +133,6 @@ var pasMal=0;
 //$('touche').click(init()); à supprimer
 
 
-init();
 function init(){
     noteAlea();
     //Permet de générer aléatoirement une "note" parmi les 4 possibles
@@ -148,6 +164,7 @@ function init(){
             $('.perfect').text("Perfect : "+perfect);
             posY =0;
             $("#zoneDeValidation").css("background-color", "#75CA00");
+            $("#zoneDeValidation span").text('Perfect');
             noteAlea();
         }
         else if(divAscii == touche && posY<=475 && posY>=375){
@@ -156,6 +173,7 @@ function init(){
             $('.bien').text("Bien : "+bien);
             posY =0;
             $("#zoneDeValidation").css("background-color", "#FFC300");
+            $("#zoneDeValidation span").text('Good');
             noteAlea();
         }
         else if(divAscii == touche && posY<=475 && posY>=350){
@@ -164,6 +182,7 @@ function init(){
             $('.pasMal').text("Pas mal : "+pasMal);
             posY =0;
             $("#zoneDeValidation").css("background-color", "red");
+             $('#zoneDeValidation span').text("Not Bad");
             noteAlea();
         }
         else {
@@ -191,6 +210,7 @@ function init(){
             $( ".note" ).remove();
             posY =0;
             $("#zoneDeValidation").css("background-color", "black");
+            $('#zoneDeValidation span').text("Miss");
             noteAlea();
         }
     };
