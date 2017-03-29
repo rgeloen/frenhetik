@@ -1,2 +1,2 @@
 # frenhetix
-Développement du jeu vidéo
+Branche du site accueil du jeu vidéo
