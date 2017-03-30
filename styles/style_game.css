@@ -212,3 +212,16 @@ background-color: hsl(44,100%,44%);
   font-family:"font";
   color:#75ca00; 
 }
+
+.keyplay{
+  position:absolute;
+  font-family: "font";
+  color:white;
+  bottom: 8%;
+  width:25%;
+  Left:42%;
+}
+.keyplay span{
+  margin-right:15%;
+  background-color: black;
+}

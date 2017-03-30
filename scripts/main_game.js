@@ -71,10 +71,10 @@ retour.css("display","none");
         button1.text("Configurer touches").fadeIn("slow",function(){});
       });
       button2.fadeOut("300", function(){
-        button2.text("Pute").fadeIn("slow",function(){});
+        button2.text("").fadeIn("slow",function(){});
       });
       button3.fadeOut("300", function(){
-        button3.text("Tchoin").fadeIn("slow",function(){});
+        button3.text("").fadeIn("slow",function(){});
       });
     } else if(button2.hasClass("play2")){
       menu.fadeOut("900", function(){})
@@ -132,14 +132,14 @@ retour.css("display","none");
   ***********************************************/
 
 var posY=0, //Position des notes change grâce à la fonction deplacementNote
-    dirY=3, //Vitesse des notes
+    dirY=3.2, //Vitesse des notes
     manqué=0, //Compteur des coups ratés change grâce à la fonction deplacementNote
     bien=0, //Compteur des coups réussis change grâce à la fonction deplacementNote
     touche = 0, //Enregistre le code ASCII de la touche donnée et le compare avec la div
     perfect=0,
     pasMal=0;
-    var highScore = perfect + bien+ pasMal;
-
+  var highScore = 0;
+ 
 function init(){
         update(player);
         setInterval(function () {
@@ -265,6 +265,7 @@ function end(){
     dirY =0;
     $(".note").remove();
     $(".end_screen").css('display','block');
+    highScore = perfect + bien + pasMal;
     $(".final_score").text("Your Score is :" + highScore);
 }
 });
