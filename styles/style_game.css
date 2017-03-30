@@ -46,7 +46,7 @@ body{
   background:#000;
   border-radius: 10px;
   color:#75ca00;
-  font-family:"roadRage";
+  font-family:"font";
   color:#75ca00;
   text-align: center;
 }
@@ -108,7 +108,7 @@ body{
   border: 1px solid #75ca00;
   border-radius: 10px;
   text-align: center;
-  font-family: "roadRage";
+  font-family: "font";
   margin : 10% 30%;
     transition-duration: 0.7s;
 }
@@ -116,7 +116,7 @@ body{
   border: 1px solid white;
   border-radius: 10px;
   text-align: center;
-  font-family: "roadRage";
+  font-family: "font";
   margin : 10% 30%;
   background-color: #75ca00;
   transition-duration: 0.7s;
@@ -138,7 +138,7 @@ body{
   margin:15%;
   margin-bottom: 5%;
   color: #75CA00;
-  font-family: "roadRage";
+  font-family: "font";
   text-decoration:none;
 }
 .back:hover{
@@ -193,4 +193,22 @@ background-color: hsl(44,100%,44%);
   left: 40%;
   top: 10%;
   position: absolute;
+}
+
+.end_screen{
+  position: absolute;
+  z-index:100;
+  width:30%;
+  height:55%;
+  top:25%;
+  left:35%;
+  background:#000;
+  border: solid #75ca00 6px;
+  border-radius: 10px;
+  text-align: center; 
+  display:none;
+}
+.final_score{
+  font-family:"font";
+  color:#75ca00; 
 }

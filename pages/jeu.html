@@ -26,28 +26,43 @@
       </div>
 
 
-  		<div id="menu">
-  				<div class="button">
-  						<a href="#" class="menu1" id="button1">Play</a>
-  				</div>
-  				<div class="button">
-  					<a href="#" class="menu2" id="button2">Options</a>
-  				</div>
-  				<div class="button">
-  					 <a href="#" class="menu3" id="button3">Quit</a>
-  				</div>
-          <a class="back" href="#">Back</a>
-  		</div>
+      <div id="menu">
+        <div class="button">
+          <a href="#" class="menu1" id="button1">Play</a>
+        </div>
+        <div class="button">
+          <a href="#" class="menu2" id="button2">Options</a>
+        </div>
+        <div class="button">
+          <a href="#" class="menu3" id="button3">Quit</a>
+        </div>
+        <a class="back" href="#">Back</a>
+      </div>
+      <div class="end_screen">
+        <div class="button">
+          <a href="javascript:window.location.reload()" class="menu1" id="button1">Restart</a>
+        </div>
+        <div class="button menu2">
+          <!--lien twitter-->
+          <a href="https://goo.gl/f7J7z4" target="_blank" class="menu2" id="button2">Twitter</a>
+        </div>
+        <div class="button menu3">
+          <!--lien facebook-->
+          <a href="https://www.facebook.com/frenhetik/" target="_blank" class="menu3" id="button3">Facebook</a>
+        </div>
+        <span class="final_score">Score</span>
+      </div>
+
 
     </div>
     <div>
-        <div id="progressBarControl">
-            <div id="progressBar"></div>
-            <div id="compteur"></div>
-        </div>
+      <div id="progressBarControl">
+        <div id="progressBar"></div>
+        <div id="compteur"></div>
+      </div>
     </div>
-    <audio src="../tracks/earthWindFireSeptember.mp3"  ontimeupdate="(function(event){update(player)
-})" id="musicEasy"></audio>
+    <audio src="../tracks/music_easy.1.mp3"  ontimeupdate="(function(event){update(player)
+                                                           })" id="musicEasy"></audio>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../scripts/main_game.js"></script>
 

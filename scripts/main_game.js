@@ -41,15 +41,20 @@ retour.css("display","none");
           init();
         });
         button2.click(function() {
+          $('audio').attr('src','music_normal.1.mp3');
+          });
            $('#musicEasy')[0].play();
+          $('a').click(function() {
           menu.fadeOut("900", function(){});
           init();
         });
         button3.click(function() {
+          $('audio').attr('src','music_hard.1.mp3');
+          });
           $('#musicEasy')[0].play();
           menu.fadeOut("900", function(){});
           init();
-	      });
+	      
       };
     });
 
@@ -149,7 +154,7 @@ function init(){
             deplacementNote()
         }, 1);
         setInterval(function () {
-            if (currentTime === totalDuration) {
+            if (currentTime === totalDuration-2) {
                 end();
             }
         }, 1000);
@@ -224,8 +229,10 @@ function init(){
             $("#zoneDeValidation").css("background-color", "black");
             $('#zoneDeValidation span').text("Miss");
             noteAlea();
+          
         }
     };
+ 
     var player= document.getElementById("musicEasy");
     var playhead = document.createElement("progress"),
     audioTrack= document.getElementById("audioTrack"),
@@ -254,8 +261,10 @@ function init(){
     m = (m >= 10) ? m : "0" + m;
     };
 
-    function end(){
+function end(){
     dirY =0;
     $(".note").remove();
+    $(".end_screen").css('display','block');
+    $(".final_score").text("Your Score is :" + highScore);
 }
 });
